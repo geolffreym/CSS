@@ -1,0 +1,69 @@
+//Autor: Geolffrey Mena
+//Mixins
+
+//FALLBACKS
+@mixin transform($action) {
+  -webkit-transform: #{$action};
+  -moz-transform: #{$action};
+  -o-transform: #{$action};
+  transform: #{$action};
+}
+
+@mixin transition($easy: 0.5s, $type: all) {
+  -webkit-transition: #{$type} $easy;
+  -moz-transition: #{$type} $easy;
+  -o-transition: #{$type} $easy;
+  -ms-transition: #{$type} $easy;
+  transition: #{$type} $easy;
+}
+
+@mixin filter($filter) {
+  & {
+	filter: #{$filter};
+	-webkit-filter: #{$filter};
+	-moz-filter: #{$filter};
+	-o-filter: #{$filter};
+	-ms-filter: #{$filter};
+  }
+}
+
+//BACKGROUND
+@mixin backColor($color, $opacity: false) {
+  background-color: $color;
+  @if $opacity {
+	background-color: rgba($color, $opacity);
+  }
+}
+
+@mixin backImg($img) {
+  background-image: url($img-directory + $img);
+  background-repeat: no-repeat;
+}
+
+//INPUT
+
+@mixin placeHolder($color, $font-type: normal, $family: ('Open Sans', sans-serif)) {
+
+  &::-webkit-input-placeholder {
+	color: $color;
+	font-style: $font-type;
+	font-family: $family;
+  }
+  &:-moz-placeholder {
+	/* Firefox 18- */
+	color: $color;
+	font-style: $font-type;
+	font-family: $family;
+  }
+  &::-moz-placeholder {
+	/* Firefox 19+ */
+	color: $color;
+	font-style: $font-type;
+	font-family: $family;
+  }
+  &:-ms-input-placeholder {
+	color: $color;
+	font-style: $font-type;
+	font-family: $family;
+  }
+}

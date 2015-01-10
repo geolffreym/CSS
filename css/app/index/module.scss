@@ -1,0 +1,45 @@
+.login {
+  margin-top: 6%;
+  .login-box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+
+    .input-group-addon {
+      background-color: #edede5;
+      border-color: darken(#edede5, 20%);
+      i {
+        position: relative;
+        top: 1px;
+        color: darken(#edede5, 20%);
+        font-size: 18px;
+      }
+    }
+    .form-control {
+      @include placeHolder(darken(#edede5, 20%));
+      border-color: darken(#edede5, 20%);
+      height: 40px;
+      color: darken(#edede5, 20%);
+    }
+
+    .btn {
+      @include transition();
+      background-color: #ff6766;
+      padding: 15px;
+      border-radius: 0;
+      border: none;
+      &:hover {
+        @include transition();
+        background-color: darken(#ff6766, 5%)
+      }
+    }
+    button {
+      height: 50px;
+      outline: none;
+      background-color: #ff6766 !important;
+      &:hover {
+        background-color: #ff4e4d !important;
+      }
+    }
+  }
+}

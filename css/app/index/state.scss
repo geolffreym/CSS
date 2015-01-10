@@ -1,0 +1,522 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/**SEPARATOR*/
+.border-magic {
+  //@include backCarbon;
+  position: absolute;
+  top: -19px;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  left: 10px;
+  border-style: solid;
+  border-width: 0 25px 35px 25px;
+  border-color: transparent transparent #292929 transparent;
+
+}
+
+.border-magic-climb {
+  //@include backCarbon(#bdc3c7);
+  position: absolute;
+  top: -4px;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  left: -28px;
+  border-radius: 5px 0;
+  border-style: solid;
+  border-width: 0px 70px 13px 0px;
+  border-color: transparent #292929 transparent transparent;
+  //box-shadow: 1px 1px 1px #000;
+
+}
+
+.glass-magic {
+  position: absolute;
+  z-index: 20;
+  border-radius: 55px;
+  background-color: #fff;
+  border-color: #fff;
+  border-style: solid;
+  left: 0;
+  @include transition(0.2s);
+}
+
+.glass-magic-middle {
+  top: -100px;
+  height: 144px;
+  width: 150px;
+  border-radius: 80px;
+}
+
+.glass-magic-little {
+  width: 118px;
+  top: -33px;
+  height: 115px;
+}
+
+.glass-magic-big {
+  top: -90px;
+  height: 210px;
+  border-radius: 156px;
+}
+
+.gradient-line {
+  @include gradient-vertical();
+  margin: 0 5px 0 0;
+  float: left;
+  width: 2px;
+  height: 400px;
+}
+
+/**MODIFIER*/
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.normalize-heading {
+  margin: 0 0 5px 0;
+}
+
+.normalize-icon {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.horizontal-middle {
+  float: none;
+  margin: 0 auto;
+}
+
+/**TOOLS*/
+.message-box {
+  position: absolute;
+  z-index: 100;
+  top: 89%;
+  left: -30%;
+}
+
+.message-box-alert {
+  @extend .alert;
+  @extend .alert-warning;
+}
+
+.message-box-success {
+  @extend .alert;
+  @extend .alert-success;
+}
+
+.message-box-default {
+  @extend .alert;
+  @extend .alert-info;
+}
+
+.message-box-error {
+  @extend .alert;
+  @extend .alert-danger;
+}
+
+/**FORM*/
+
+.input-error {
+
+  .addon {
+    background-color: lighten(#a94442, 20%) !important;
+    border-color: lighten(#a94442, 20%) !important;
+    box-shadow: 0 0 5px lighten(#a94442, 20%) !important;
+    i {
+      color: #fff !important;
+    }
+  }
+  input {
+    border-color: lighten(#a94442, 20%) !important;
+    box-shadow: 0 0 5px lighten(#a94442, 20%) !important;
+
+  }
+}
+
+/**MODULES*/
+.module-box {
+  margin: 25px auto 0 auto;
+}
+
+.module-menu {
+  li {
+    padding: 5px 0;
+    i {
+      font-size: 18px;
+    }
+  }
+}
+
+.module-box-style {
+  box-shadow: 7px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+.module-padding-normalize {
+  padding-bottom: 15px;
+}
+
+/**IMGS*/
+.img-paragraph {
+  float: left;
+  margin: 0 15px 5px 0;
+  border-radius: 8px;
+}
+
+.img-paragraph-middle {
+  width: 200px;
+}
+
+.img-paragraph-big {
+  width: 400px;
+}
+
+/**Overflow*/
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/**BORDERS*/
+.no-border {
+  border: none !important;
+}
+
+.border-color-white {
+  border-color: $white !important;
+}
+
+.border-color-blue {
+  border-color: $blue !important;
+}
+
+.border-color-red {
+  border-color: $red !important;
+}
+
+.border-color-green {
+  border-color: $green !important;
+}
+
+.border-color-orange {
+  border-color: $orange !important;
+}
+
+.border-color-gray {
+  border-color: $gray !important;
+}
+
+.border-color-soft-gray {
+  border-color: $soft-gray !important;
+}
+
+/*BACKGROUND*/
+.background-none {
+  background-color: transparent;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+/**BACKGROUND-IMG*/
+.background-1 {
+  @include backImg('Road-at-the-foot-of-the-hope-in-the-distance-try-hard-1920x1440.jpg');
+}
+
+/**FONT*/
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*COLORS*/
+.money {
+  color: $green !important;
+  font-weight: 700;
+}
+
+.white {
+  color: $white !important;
+}
+
+.blue {
+  color: $blue !important;
+}
+
+.gold {
+  color: $gold !important;
+}
+
+.red {
+  color: $red !important;
+}
+
+.gray {
+  color: $gray !important;
+}
+
+.soft-gray {
+  color: $soft-gray !important;
+}
+
+.download {
+  i {
+    top: 0;
+  }
+}
+
+/*HEADER STATES**/
+.big-title {
+  font-family: 'Open Sans';
+  margin: 0 0 10px 0;
+  padding: 25px 15px;
+  h1 {
+    margin-top: 0;
+    font-size: 65px;
+    display: inline-block;
+  }
+  i {
+    display: inline-block;
+    font-size: 65px;
+  }
+}
+
+.middle-title {
+  @extend .big-title;
+  h1, i {
+    font-size: 35px;
+  }
+}
+
+.small-title {
+  @extend .big-title;
+  padding: 10px 15px;
+  h1, i {
+    font-size: 20px;
+  }
+}
+
+/**EXTRAS*/
+#fountainG {
+  position: relative;
+  width: 100px;
+  height: 12px
+}
+
+.fountainG {
+  position: absolute;
+  top: 0;
+  background-color: #FFFFFF;
+  width: 13px;
+  height: 13px;
+  -moz-animation-name: bounce_fountainG;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: linear;
+  -moz-transform: scale(.3);
+  -moz-border-radius: 8px;
+  -webkit-animation-name: bounce_fountainG;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  -webkit-transform: scale(.3);
+  -webkit-border-radius: 8px;
+  -ms-animation-name: bounce_fountainG;
+  -ms-animation-duration: 1s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: linear;
+  -ms-transform: scale(.3);
+  -ms-border-radius: 8px;
+  -o-animation-name: bounce_fountainG;
+  -o-animation-duration: 1s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: linear;
+  -o-transform: scale(.3);
+  -o-border-radius: 8px;
+  animation-name: bounce_fountainG;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  transform: scale(.3);
+  border-radius: 8px;
+}
+
+#fountainG_1 {
+  left: 0;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+#fountainG_2 {
+  left: 13px;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+#fountainG_3 {
+  left: 25px;
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+#fountainG_4 {
+  left: 38px;
+  -moz-animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  -ms-animation-delay: 0.7s;
+  -o-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+#fountainG_5 {
+  left: 50px;
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+#fountainG_6 {
+  left: 63px;
+  -moz-animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+#fountainG_7 {
+  left: 75px;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+#fountainG_8 {
+  left: 88px;
+  -moz-animation-delay: 1.1s;
+  -webkit-animation-delay: 1.1s;
+  -ms-animation-delay: 1.1s;
+  -o-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+
+@-moz-keyframes bounce_fountainG {
+  0% {
+    -moz-transform: scale(1);
+    background-color: #FFFFFF;
+  }
+
+  100% {
+    -moz-transform: scale(.3);
+    background-color: darken(#ff6766, 50%);
+  }
+
+}
+
+@-webkit-keyframes bounce_fountainG {
+  0% {
+    -webkit-transform: scale(1);
+    background-color: #FFFFFF;
+  }
+
+  100% {
+    -webkit-transform: scale(.3);
+    background-color: darken(#ff6766, 50%);
+  }
+
+}
+
+@-ms-keyframes bounce_fountainG {
+  0% {
+    -ms-transform: scale(1);
+    background-color: #FFFFFF;
+  }
+
+  100% {
+    -ms-transform: scale(.3);
+    background-color: darken(#ff6766, 50%);
+  }
+
+}
+
+@-o-keyframes bounce_fountainG {
+  0% {
+    -o-transform: scale(1);
+    background-color: #FFFFFF;
+  }
+
+  100% {
+    -o-transform: scale(.3);
+    background-color: darken(#ff6766, 50%);
+  }
+
+}
+
+@keyframes bounce_fountainG {
+  0% {
+    transform: scale(1);
+    background-color: #FFFFFF;
+  }
+
+  100% {
+    transform: scale(.3);
+    background-color: darken(#ff6766, 50%);
+  }
+
+}
+
+/**QUERIES*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: $screen-md-max) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1500px) {
+
+}
+
