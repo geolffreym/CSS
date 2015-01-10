@@ -1,0 +1,4 @@
+#Ignora los archivos de configuracion
+#Phyton
+.idea/
+def2224/settings_local.py
