@@ -5861,12 +5861,18 @@ button.close {
 .icon-smashing:before {
   content: "\e71b"; }
 
+/**
+https://smacss.com/book/type-base
+*/
 body {
   background-color: #e9e9e9;
   font-family: 'Roboto', sans-serif;
   position: absolute;
   height: 100%; }
 
+/**
+https://smacss.com/book/type-layout
+*/
 #header-box {
   padding: 30px 15px; }
 
@@ -5900,6 +5906,9 @@ body {
       -o-filter: saturate(30%) brightness(0.5);
       -ms-filter: saturate(30%) brightness(0.5); }
 
+/*
+https://smacss.com/book/type-module
+*/
 .login {
   margin-top: 6%; }
   .login .login-box {
@@ -5960,6 +5969,9 @@ body {
       .login .login-box button:hover {
         background-color: #ff4e4d !important; }
 
+/**
+https://smacss.com/book/type-state
+*/
 /**SEPARATOR*/
 .border-magic {
   position: absolute;
@@ -6025,6 +6037,36 @@ body {
   height: 400px; }
 
 /**MODIFIER*/
+.margin-top30 {
+  margin-top: 30px; }
+
+.margin-top10 {
+  margin-top: 10px; }
+
+.margin-top5 {
+  margin-top: 5px; }
+
+.margin-top3 {
+  margin-top: 3px; }
+
+.font-size-big {
+  font-size: 15px; }
+
+.font-size-small {
+  font-size: 13px; }
+
+.font-size-xs {
+  font-size: 11px; }
+
+.no-text-decoration-hover:hover {
+  text-decoration: none; }
+
+.align-center {
+  text-align: center; }
+
+.show-inline {
+  display: inline-block; }
+
 .no-padding {
   padding: 0 !important; }
 
@@ -6034,10 +6076,13 @@ body {
 .normalize-heading {
   margin: 0 0 5px 0; }
 
-.normalize-icon {
+.normalize-icon, .normalize-icon-big {
   position: relative;
-  top: 3px;
+  top: 1px;
   margin-right: 5px; }
+
+.normalize-icon-big {
+  top: 3px !important; }
 
 .full-width {
   width: 100%; }
@@ -6049,6 +6094,7 @@ body {
   float: none;
   margin: 0 auto; }
 
+/**NETWORK**/
 /**TOOLS*/
 .message-box {
   position: absolute;
@@ -6136,14 +6182,18 @@ body {
   background-repeat: no-repeat; }
 
 /**FONT*/
-.bold {
+.date {
+  font-style: italic;
+  font-size: 13px; }
+
+.bold, .offline {
   font-weight: bold; }
 
 .uppercase {
   text-transform: uppercase; }
 
 /*COLORS*/
-.money {
+.money, .connected {
   color: #4cae4c !important;
   font-weight: 700; }
 
@@ -6156,7 +6206,7 @@ body {
 .gold {
   color: #ffff00 !important; }
 
-.red {
+.red, .offline {
   color: #c0392b !important; }
 
 .gray {
@@ -6337,5 +6387,8 @@ body {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+/*
+https://smacss.com/book/type-theme
+*/
 
 /*# sourceMappingURL=ini.css.map */

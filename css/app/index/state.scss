@@ -1,3 +1,7 @@
+/**
+https://smacss.com/book/type-state
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 @import url(http://fonts.googleapis.com/css?family=Just+Another+Hand);
@@ -74,6 +78,49 @@
 }
 
 /**MODIFIER*/
+
+.margin-top30 {
+  margin-top: 30px
+}
+
+.margin-top10 {
+  margin-top: 10px;
+}
+
+.margin-top5 {
+  margin-top: 5px;
+}
+
+.margin-top3 {
+  margin-top: 3px;
+}
+
+.font-size-big {
+  font-size: 15px;
+}
+
+.font-size-small {
+  font-size: 13px;
+}
+
+.font-size-xs {
+  font-size: 11px;
+}
+
+.no-text-decoration-hover {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.align-center {
+  text-align: center;
+}
+
+.show-inline {
+  display: inline-block;
+}
+
 .no-padding {
   padding: 0 !important;
 }
@@ -88,8 +135,13 @@
 
 .normalize-icon {
   position: relative;
-  top: 3px;
+  top: 1px;
   margin-right: 5px;
+}
+
+.normalize-icon-big {
+  @extend .normalize-icon;
+  top: 3px !important;
 }
 
 .full-width {
@@ -103,6 +155,17 @@
 .horizontal-middle {
   float: none;
   margin: 0 auto;
+}
+
+/**NETWORK**/
+
+.connected {
+  @extend .money
+}
+
+.offline {
+  @extend .red;
+  @extend .bold;
 }
 
 /**TOOLS*/
@@ -243,6 +306,12 @@
 
 /**FONT*/
 
+.date {
+  font-style: italic;
+  font-size: 13px;
+
+}
+
 .bold {
   font-weight: bold;
 }
@@ -268,6 +337,7 @@
 .gold {
   color: $gold !important;
 }
+
 
 .red {
   color: $red !important;
