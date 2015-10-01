@@ -59,14 +59,7 @@
 }
 
 
-/**HELPERS**/
-@mixin backImg($img) {
-  background-image: url($img-directory + $img);
-  background-repeat: no-repeat;
-}
-
 //INPUT
-
 @mixin placeHolder($color, $font-type: normal, $family: ('Open Sans', sans-serif)) {
 
   &::-webkit-input-placeholder {
