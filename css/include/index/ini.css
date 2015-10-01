@@ -3851,24 +3851,20 @@ a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #428bca; }
 
-.alert, .message-box-alert, .message-box-success, .message-box-default, .message-box-error {
+.alert {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px; }
-  .alert h4, .message-box-alert h4, .message-box-success h4, .message-box-default h4, .message-box-error h4 {
+  .alert h4 {
     margin-top: 0;
     color: inherit; }
-  .alert .alert-link, .message-box-alert .alert-link, .message-box-success .alert-link, .message-box-default .alert-link, .message-box-error .alert-link {
+  .alert .alert-link {
     font-weight: bold; }
-  .alert > p, .message-box-alert > p, .message-box-success > p, .message-box-default > p, .message-box-error > p,
-  .alert > ul,
-  .message-box-alert > ul,
-  .message-box-success > ul,
-  .message-box-default > ul,
-  .message-box-error > ul {
+  .alert > p,
+  .alert > ul {
     margin-bottom: 0; }
-  .alert > p + p, .message-box-alert > p + p, .message-box-success > p + p, .message-box-default > p + p, .message-box-error > p + p {
+  .alert > p + p {
     margin-top: 5px; }
 
 .alert-dismissable {
@@ -3879,40 +3875,40 @@ a.thumbnail.active {
     right: -21px;
     color: inherit; }
 
-.alert-success, .message-box-success {
+.alert-success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #3c763d; }
-  .alert-success hr, .message-box-success hr {
+  .alert-success hr {
     border-top-color: #c9e2b3; }
-  .alert-success .alert-link, .message-box-success .alert-link {
+  .alert-success .alert-link {
     color: #2b542c; }
 
-.alert-info, .message-box-default {
+.alert-info {
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #31708f; }
-  .alert-info hr, .message-box-default hr {
+  .alert-info hr {
     border-top-color: #a6e1ec; }
-  .alert-info .alert-link, .message-box-default .alert-link {
+  .alert-info .alert-link {
     color: #245269; }
 
-.alert-warning, .message-box-alert {
+.alert-warning {
   background-color: #fcf8e3;
   border-color: #faebcc;
   color: #8a6d3b; }
-  .alert-warning hr, .message-box-alert hr {
+  .alert-warning hr {
     border-top-color: #f7e1b5; }
-  .alert-warning .alert-link, .message-box-alert .alert-link {
+  .alert-warning .alert-link {
     color: #66512c; }
 
-.alert-danger, .message-box-error {
+.alert-danger {
   background-color: #f2dede;
   border-color: #ebccd1;
   color: #a94442; }
-  .alert-danger hr, .message-box-error hr {
+  .alert-danger hr {
     border-top-color: #e4b9c0; }
-  .alert-danger .alert-link, .message-box-error .alert-link {
+  .alert-danger .alert-link {
     color: #843534; }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -5873,268 +5869,6 @@ https://smacss.com/book/type-module
 /**
 https://smacss.com/book/type-state
 */
-/**SEPARATOR*/
-.border-magic {
-  position: absolute;
-  top: -19px;
-  z-index: 20;
-  width: 0;
-  height: 0;
-  left: 10px;
-  border-style: solid;
-  border-width: 0 25px 35px 25px;
-  border-color: transparent transparent #292929 transparent; }
-
-.border-magic-climb {
-  position: absolute;
-  top: -4px;
-  z-index: 20;
-  width: 0;
-  height: 0;
-  left: -28px;
-  border-radius: 5px 0;
-  border-style: solid;
-  border-width: 0px 70px 13px 0px;
-  border-color: transparent #292929 transparent transparent; }
-
-.glass-magic {
-  position: absolute;
-  z-index: 20;
-  border-radius: 55px;
-  background-color: #fff;
-  border-color: #fff;
-  border-style: solid;
-  left: 0;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s; }
-
-.glass-magic-middle {
-  top: -100px;
-  height: 144px;
-  width: 150px;
-  border-radius: 80px; }
-
-.glass-magic-little {
-  width: 118px;
-  top: -33px;
-  height: 115px; }
-
-.glass-magic-big {
-  top: -90px;
-  height: 210px;
-  border-radius: 156px; }
-
-.gradient-line {
-  background-image: -webkit-linear-gradient(top, #555 0%, #333 100%);
-  background-image: linear-gradient(to bottom, #555 0%, #333 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF333333', GradientType=0);
-  margin: 0 5px 0 0;
-  float: left;
-  width: 2px;
-  height: 400px; }
-
-/**MODIFIER*/
-.margin-top30 {
-  margin-top: 30px; }
-
-.margin-top10 {
-  margin-top: 10px; }
-
-.margin-top5 {
-  margin-top: 5px; }
-
-.margin-top3 {
-  margin-top: 3px; }
-
-.font-size-big {
-  font-size: 15px; }
-
-.font-size-small {
-  font-size: 13px; }
-
-.font-size-xs {
-  font-size: 11px; }
-
-.no-text-decoration-hover:hover {
-  text-decoration: none; }
-
-.align-center {
-  text-align: center; }
-
-.show-inline {
-  display: inline-block; }
-
-.no-padding {
-  padding: 0 !important; }
-
-.no-margin {
-  margin: 0 !important; }
-
-.normalize-heading {
-  margin: 0 0 5px 0; }
-
-.normalize-icon, .normalize-icon-big {
-  position: relative;
-  top: 1px;
-  margin-right: 5px; }
-
-.normalize-icon-big {
-  top: 3px !important; }
-
-.full-width {
-  width: 100%; }
-
-.text-align-center {
-  text-align: center; }
-
-.horizontal-middle {
-  float: none;
-  margin: 0 auto; }
-
-/**NETWORK**/
-/**TOOLS*/
-.message-box {
-  position: absolute;
-  z-index: 100;
-  top: 89%;
-  left: -30%; }
-
-/**FORM*/
-.input-error label {
-  background-color: #ce8483 !important;
-  border-color: #ce8483 !important;
-  box-shadow: 0 0 5px #ce8483 !important; }
-  .input-error label i {
-    color: #fff !important; }
-.input-error input {
-  border-color: #ce8483 !important;
-  box-shadow: 0 0 5px #ce8483 !important; }
-
-/**MODULES*/
-.module-box {
-  margin: 25px auto 0 auto; }
-
-.module-box-style {
-  box-shadow: 7px 0px 7px rgba(0, 0, 0, 0.5); }
-
-.module-padding-normalize {
-  padding-bottom: 15px; }
-
-/**IMGS*/
-.img-paragraph {
-  float: left;
-  margin: 0 15px 5px 0;
-  border-radius: 8px; }
-
-.img-paragraph-middle {
-  width: 200px; }
-
-.img-paragraph-big {
-  width: 400px; }
-
-/**Overflow*/
-.overflow-hidden {
-  overflow: hidden; }
-
-/**BORDERS*/
-.no-border {
-  border: none !important; }
-
-.border-color-white {
-  border-color: #fff !important; }
-
-.border-color-blue {
-  border-color: #2980b9 !important; }
-
-.border-color-red {
-  border-color: #c0392b !important; }
-
-.border-color-green {
-  border-color: #4cae4c !important; }
-
-.border-color-orange {
-  border-color: #d35400 !important; }
-
-.border-color-gray {
-  border-color: #666 !important; }
-
-.border-color-soft-gray {
-  border-color: #999 !important; }
-
-/*BACKGROUND*/
-.background-none {
-  background-color: transparent; }
-
-.background-white {
-  background-color: #fff; }
-
-/**BACKGROUND-IMG*/
-.background-1 {
-  background-image: url("/static/media/imgs/Road-at-the-foot-of-the-hope-in-the-distance-try-hard-1920x1440.jpg");
-  background-repeat: no-repeat; }
-
-/**FONT*/
-.date {
-  font-style: italic;
-  font-size: 13px; }
-
-.bold, .offline {
-  font-weight: bold; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-/*COLORS*/
-.money, .connected {
-  color: #4cae4c !important;
-  font-weight: 700; }
-
-.white {
-  color: #fff !important; }
-
-.blue {
-  color: #2980b9 !important; }
-
-.gold {
-  color: #ffff00 !important; }
-
-.red, .offline {
-  color: #c0392b !important; }
-
-.gray {
-  color: #666 !important; }
-
-.soft-gray {
-  color: #999 !important; }
-
-.download i {
-  top: 0; }
-
-/*HEADER STATES**/
-.big-title, .middle-title, .small-title {
-  font-family: 'Open Sans', 'sans-serif';
-  margin: 0 0 10px 0;
-  padding: 25px 15px; }
-  .big-title h1, .middle-title h1, .small-title h1 {
-    margin-top: 0;
-    font-size: 65px;
-    display: inline-block; }
-  .big-title i, .middle-title i, .small-title i {
-    display: inline-block;
-    font-size: 65px; }
-
-.middle-title h1, .middle-title i {
-  font-size: 35px; }
-
-.small-title {
-  padding: 10px 15px; }
-  .small-title h1, .small-title i {
-    font-size: 20px; }
-
 /**QUERIES*/
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
