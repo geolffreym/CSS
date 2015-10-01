@@ -1,6 +1,7 @@
 //Autor: Geolffrey Mena
 //Mixins
 
+/***** ANIMATION MIXINS *******/
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
     @content;
@@ -24,7 +25,6 @@
   animation: #{$action} $easy;
 }
 
-//FALLBACKS
 @mixin transform($action) {
   -webkit-transform: #{$action};
   -moz-transform: #{$action};
@@ -39,6 +39,8 @@
   -ms-transition: #{$type} $easy;
   transition: #{$type} $easy;
 }
+
+/*** FALLBACKS ***/
 
 @mixin box_shadow($top, $left, $color) {
   -moz-box-shadow: #{$top} #{$left} $color;
@@ -56,14 +58,8 @@
   }
 }
 
-//BACKGROUND
-@mixin backColor($color, $opacity: false) {
-  background-color: $color;
-  @if $opacity {
-    background-color: rgba($color, $opacity);
-  }
-}
 
+/**HELPERS**/
 @mixin backImg($img) {
   background-image: url($img-directory + $img);
   background-repeat: no-repeat;
