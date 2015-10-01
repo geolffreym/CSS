@@ -6103,11 +6103,11 @@ https://smacss.com/book/type-state
   left: -30%; }
 
 /**FORM*/
-.input-error .addon {
+.input-error label {
   background-color: #ce8483 !important;
   border-color: #ce8483 !important;
   box-shadow: 0 0 5px #ce8483 !important; }
-  .input-error .addon i {
+  .input-error label i {
     color: #fff !important; }
 .input-error input {
   border-color: #ce8483 !important;
@@ -6116,11 +6116,6 @@ https://smacss.com/book/type-state
 /**MODULES*/
 .module-box {
   margin: 25px auto 0 auto; }
-
-.module-menu li {
-  padding: 5px 0; }
-  .module-menu li i {
-    font-size: 18px; }
 
 .module-box-style {
   box-shadow: 7px 0px 7px rgba(0, 0, 0, 0.5); }
@@ -6220,7 +6215,7 @@ https://smacss.com/book/type-state
 
 /*HEADER STATES**/
 .big-title, .middle-title, .small-title {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'sans-serif';
   margin: 0 0 10px 0;
   padding: 25px 15px; }
   .big-title h1, .middle-title h1, .small-title h1 {
@@ -6239,148 +6234,6 @@ https://smacss.com/book/type-state
   .small-title h1, .small-title i {
     font-size: 20px; }
 
-/**EXTRAS*/
-#fountainG {
-  position: relative;
-  width: 100px;
-  height: 12px; }
-
-.fountainG {
-  position: absolute;
-  top: 0;
-  background-color: #FFFFFF;
-  width: 13px;
-  height: 13px;
-  -moz-animation-name: bounce_fountainG;
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-direction: linear;
-  -moz-transform: scale(0.3);
-  -moz-border-radius: 8px;
-  -webkit-animation-name: bounce_fountainG;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: linear;
-  -webkit-transform: scale(0.3);
-  -webkit-border-radius: 8px;
-  -ms-animation-name: bounce_fountainG;
-  -ms-animation-duration: 1s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-direction: linear;
-  -ms-transform: scale(0.3);
-  -ms-border-radius: 8px;
-  -o-animation-name: bounce_fountainG;
-  -o-animation-duration: 1s;
-  -o-animation-iteration-count: infinite;
-  -o-animation-direction: linear;
-  -o-transform: scale(0.3);
-  -o-border-radius: 8px;
-  animation-name: bounce_fountainG;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: linear;
-  transform: scale(0.3);
-  border-radius: 8px; }
-
-#fountainG_1 {
-  left: 0;
-  -moz-animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
-  -ms-animation-delay: 0.4s;
-  -o-animation-delay: 0.4s;
-  animation-delay: 0.4s; }
-
-#fountainG_2 {
-  left: 13px;
-  -moz-animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
-  -ms-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-  animation-delay: 0.5s; }
-
-#fountainG_3 {
-  left: 25px;
-  -moz-animation-delay: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  -ms-animation-delay: 0.6s;
-  -o-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
-
-#fountainG_4 {
-  left: 38px;
-  -moz-animation-delay: 0.7s;
-  -webkit-animation-delay: 0.7s;
-  -ms-animation-delay: 0.7s;
-  -o-animation-delay: 0.7s;
-  animation-delay: 0.7s; }
-
-#fountainG_5 {
-  left: 50px;
-  -moz-animation-delay: 0.8s;
-  -webkit-animation-delay: 0.8s;
-  -ms-animation-delay: 0.8s;
-  -o-animation-delay: 0.8s;
-  animation-delay: 0.8s; }
-
-#fountainG_6 {
-  left: 63px;
-  -moz-animation-delay: 0.9s;
-  -webkit-animation-delay: 0.9s;
-  -ms-animation-delay: 0.9s;
-  -o-animation-delay: 0.9s;
-  animation-delay: 0.9s; }
-
-#fountainG_7 {
-  left: 75px;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  -ms-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  animation-delay: 1s; }
-
-#fountainG_8 {
-  left: 88px;
-  -moz-animation-delay: 1.1s;
-  -webkit-animation-delay: 1.1s;
-  -ms-animation-delay: 1.1s;
-  -o-animation-delay: 1.1s;
-  animation-delay: 1.1s; }
-
-@-moz-keyframes bounce_fountainG {
-  0% {
-    -moz-transform: scale(1);
-    background-color: #FFFFFF; }
-  100% {
-    -moz-transform: scale(0.3);
-    background-color: #660100; } }
-@-webkit-keyframes bounce_fountainG {
-  0% {
-    -webkit-transform: scale(1);
-    background-color: #FFFFFF; }
-  100% {
-    -webkit-transform: scale(0.3);
-    background-color: #660100; } }
-@-ms-keyframes bounce_fountainG {
-  0% {
-    -ms-transform: scale(1);
-    background-color: #FFFFFF; }
-  100% {
-    -ms-transform: scale(0.3);
-    background-color: #660100; } }
-@-o-keyframes bounce_fountainG {
-  0% {
-    -o-transform: scale(1);
-    background-color: #FFFFFF; }
-  100% {
-    -o-transform: scale(0.3);
-    background-color: #660100; } }
-@keyframes bounce_fountainG {
-  0% {
-    transform: scale(1);
-    background-color: #FFFFFF; }
-  100% {
-    transform: scale(0.3);
-    background-color: #660100; } }
 /**QUERIES*/
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */

@@ -1,6 +1,29 @@
 //Autor: Geolffrey Mena
 //Mixins
 
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($action, $easy: 6s) {
+  -webkit-animation: #{$action} $easy; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: #{$action}$easy; /* Firefox < 16 */
+  -ms-animation: #{$action} $easy; /* Internet Explorer */
+  -o-animation: #{$action} $easy; /* Opera < 12.1 */
+  animation: #{$action} $easy;
+}
+
 //FALLBACKS
 @mixin transform($action) {
   -webkit-transform: #{$action};
@@ -17,13 +40,19 @@
   transition: #{$type} $easy;
 }
 
+@mixin box_shadow($top, $left, $color) {
+  -moz-box-shadow: #{$top} #{$left} $color;
+  -webkit-box-shadow: #{$top} #{$left} $color;
+  box-shadow: #{$top} #{$left} $color;
+}
+
 @mixin filter($filter) {
   & {
-	filter: #{$filter};
-	-webkit-filter: #{$filter};
-	-moz-filter: #{$filter};
-	-o-filter: #{$filter};
-	-ms-filter: #{$filter};
+    filter: #{$filter};
+    -webkit-filter: #{$filter};
+    -moz-filter: #{$filter};
+    -o-filter: #{$filter};
+    -ms-filter: #{$filter};
   }
 }
 
@@ -31,7 +60,7 @@
 @mixin backColor($color, $opacity: false) {
   background-color: $color;
   @if $opacity {
-	background-color: rgba($color, $opacity);
+    background-color: rgba($color, $opacity);
   }
 }
 
@@ -45,25 +74,25 @@
 @mixin placeHolder($color, $font-type: normal, $family: ('Open Sans', sans-serif)) {
 
   &::-webkit-input-placeholder {
-	color: $color;
-	font-style: $font-type;
-	font-family: $family;
+    color: $color;
+    font-style: $font-type;
+    font-family: $family;
   }
   &:-moz-placeholder {
-	/* Firefox 18- */
-	color: $color;
-	font-style: $font-type;
-	font-family: $family;
+    /* Firefox 18- */
+    color: $color;
+    font-style: $font-type;
+    font-family: $family;
   }
   &::-moz-placeholder {
-	/* Firefox 19+ */
-	color: $color;
-	font-style: $font-type;
-	font-family: $family;
+    /* Firefox 19+ */
+    color: $color;
+    font-style: $font-type;
+    font-family: $family;
   }
   &:-ms-input-placeholder {
-	color: $color;
-	font-style: $font-type;
-	font-family: $family;
+    color: $color;
+    font-style: $font-type;
+    font-family: $family;
   }
 }
