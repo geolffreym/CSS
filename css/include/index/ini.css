@@ -5864,111 +5864,12 @@ button.close {
 /**
 https://smacss.com/book/type-base
 */
-body {
-  background-color: #e9e9e9;
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  height: 100%; }
-
 /**
 https://smacss.com/book/type-layout
 */
-#header-box {
-  padding: 30px 15px; }
-
-#overlay {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -ms-transition: all 1s;
-  transition: all 1s;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #ecf0f1;
-  background-size: cover; }
-  #overlay {
-    filter: saturate(10%) brightness(0.3);
-    -webkit-filter: saturate(10%) brightness(0.3);
-    -moz-filter: saturate(10%) brightness(0.3);
-    -o-filter: saturate(10%) brightness(0.3);
-    -ms-filter: saturate(10%) brightness(0.3); }
-  #overlay:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -ms-transition: all 1s;
-    transition: all 1s; }
-    #overlay:hover {
-      filter: saturate(30%) brightness(0.5);
-      -webkit-filter: saturate(30%) brightness(0.5);
-      -moz-filter: saturate(30%) brightness(0.5);
-      -o-filter: saturate(30%) brightness(0.5);
-      -ms-filter: saturate(30%) brightness(0.5); }
-
 /*
 https://smacss.com/book/type-module
 */
-.login {
-  margin-top: 6%; }
-  .login .login-box {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #fff; }
-    .login .login-box .input-group-addon {
-      background-color: #edede5;
-      border-color: #c3c3a9; }
-      .login .login-box .input-group-addon i {
-        position: relative;
-        top: 1px;
-        color: #c3c3a9;
-        font-size: 18px; }
-    .login .login-box .form-control {
-      border-color: #c3c3a9;
-      height: 40px;
-      color: #c3c3a9; }
-      .login .login-box .form-control::-webkit-input-placeholder {
-        color: #c3c3a9;
-        font-style: normal;
-        font-family: "Open Sans", sans-serif; }
-      .login .login-box .form-control:-moz-placeholder {
-        /* Firefox 18- */
-        color: #c3c3a9;
-        font-style: normal;
-        font-family: "Open Sans", sans-serif; }
-      .login .login-box .form-control::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #c3c3a9;
-        font-style: normal;
-        font-family: "Open Sans", sans-serif; }
-      .login .login-box .form-control:-ms-input-placeholder {
-        color: #c3c3a9;
-        font-style: normal;
-        font-family: "Open Sans", sans-serif; }
-    .login .login-box .btn {
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      -ms-transition: all 0.5s;
-      transition: all 0.5s;
-      background-color: #ff6766;
-      padding: 15px;
-      border-radius: 0;
-      border: none; }
-      .login .login-box .btn:hover {
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        transition: all 0.5s;
-        background-color: #ff4e4d; }
-    .login .login-box button {
-      height: 50px;
-      outline: none;
-      background-color: #ff6766 !important; }
-      .login .login-box button:hover {
-        background-color: #ff4e4d !important; }
-
 /**
 https://smacss.com/book/type-state
 */
